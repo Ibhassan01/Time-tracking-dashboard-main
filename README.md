@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Ibhassan01/Time-tracking-dashboard-main](https://github.com/Ibhassan01/Time-tracking-dashboard-main)
+- Live Site URL: [https://time-tracking-dashboard-main-olive.vercel.app/](https://time-tracking-dashboard-main-olive.vercel.app/)
 
 ### Built with
 
