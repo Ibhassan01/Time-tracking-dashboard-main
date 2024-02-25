@@ -1,0 +1,219 @@
+:root{
+    /* PRIMARY */
+    --Blue: hsl(246, 80%, 60%);
+    --Light-orange: hsl(15, 100%, 70%);
+    --Soft-blue: hsl(195, 74%, 62%);
+    --Light-red: hsl(348, 100%, 68%);
+    --Lime-green: hsl(145, 58%, 55%);
+    --Violet: hsl(264, 64%, 52%);
+    --Soft-orange: hsl(43, 84%, 65%);
+
+    /* NEUTRAL */
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+
+    --outline: 1px solid red;
+    --min-width: 270px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    background-color: var(--Very-dark-blue);
+}
+.profile-container{
+    min-width: 200px;
+    background-color: var(--Dark-blue);
+    border-radius: 10px;
+    margin: 5% 0;
+}
+.profile{
+    background-color: var(--Blue);
+    border-radius: 10px;
+    padding: 9%;
+    display: flex;
+    gap: 5%;
+}
+.profile img{
+    outline: 3px solid white;
+    border-radius: 100%;
+}
+.profile-name{
+    text-align: start;
+}
+.profile-name p{
+    font-size: 20px;
+    color: var(--Pale-Blue);
+}
+.profile-name :nth-child(2){
+    color: white;
+    font-size: 25px;
+}
+.period{
+    padding: 8%;
+    display: flex;
+    justify-content: space-around;
+}
+.period p{
+    color: var(--Pale-Blue);
+}
+.period p:hover{
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+.container{
+    max-width: var(--max-width);
+    min-width: var(--min-width);
+    border-radius: 10px;
+    padding-top: 3%;
+    margin: 10px;
+    background-color: var(--Light-orange);
+    background-image: url(./images/icon-work.svg);
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+.inner-container{
+    margin: 20px 0 0 0;
+    padding: 8%;
+    border-radius: 10px;
+    background-color: var(--Dark-blue);
+}
+.inner-container:hover{
+    transform: scaleY(1.1);
+    cursor: pointer;
+    background-color: var(--Desaturated-blue);
+    transition: .3s ease-in-out;
+}
+.inner-container .title{
+    color: white;
+    margin: 3% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.duration{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.duration div{
+    display: flex;
+    color: var(--Pale-Blue);
+}
+.duration div p{
+    font-size: 15px;
+}
+.duration .current{
+    color: white;
+    font-size: 25px;
+}
+.two{
+    min-width: var(--min-width);
+    max-width: var(--max-width);
+    background-color: var(--Soft-blue);
+    background-image: url(./images/icon-play.svg);
+}
+.three{
+    min-width: var(--min-width);
+    max-width: var(--max-width);
+    background-color: var(--Light-red);
+    background-image: url(./images/icon-study.svg);
+}
+.four{
+    min-width: var(--min-width);
+    max-width: var(--max-width);
+    background-color: var(--Lime-green);
+    background-image: url(./images/icon-exercise.svg);
+}
+.five{
+    min-width: var(--min-width);
+    max-width: var(--max-width);
+    background-color: var(--Violet);
+    background-image: url(./images/icon-social.svg);
+}
+.six{
+    min-width: var(--min-width);
+    max-width: var(--max-width);
+    background-color: var(--Soft-orange);
+    background-image: url(./images/icon-self-care.svg);
+}
+.default-color{
+    color: var(--Pale-Blue);
+}
+@media only screen and (min-width: 750px){
+    .first-division{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container{
+        min-width: var(--min-width);
+    }
+    .duration{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .profile{
+        padding: 5% 2%;
+    }
+    .period{
+        padding: 5% 2%;
+    }
+}
+@media only screen and (max-width: 1103px){
+    .profile-container{
+        max-width: 600px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    body{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .profile-container{
+        margin: 5% 2% 5% 10%;
+    }
+    .profile{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10%;
+    }
+    .profile img{
+        height: 80px;
+        width: 80px;
+        margin: 0 0 15% 0;
+    }
+    .profile-name :nth-child(1){
+        font-size: 15px;
+        margin: 5% 0 0 0;
+    }
+    .profile-name:nth-child(2){
+        margin: 0 0 20% 0;
+    }
+    .period{
+        flex-direction: column;
+    }
+    .period p{
+        margin: 5%;
+    }
+    .container{
+        min-width: 230px;
+    }
+    .inner-container .title{
+        margin: 4% 0;
+    }
+    .duration .current{
+        font-size: 40px;
+    }
+}
